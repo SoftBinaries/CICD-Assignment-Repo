@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/* Univerasal / Base / General Styling */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: "Rajdhani", sans-serif;
+	background-color: grey;
+}
+
+:root
+{
+	--el-color:#fffff0;
+}
+
+h1,h2,h3,h4,a,p
+{
+color: var(--el-color);	
+}
+
+a
+{
+	text-decoration: none;
+}
+
+h1
+{
+	font-size: 3rem;
+}
+
+h2{
+	font-size: 2.5rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h3
+{
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+p
+{
+	font-size: 1.25rem;
+	font-weight: 300;
+}
+
+/* Header Section */
+
+.header .container
+{
+	width: 100%;
+	border: 2px solid teal;	
+}
+
+.container nav
+{
+	height: 100px;
+	background-image: url(../imgs/DevOps\ Analytics.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container nav h2
+{
+	float: right;
+	line-height: 100px;
+	display: inline;
+	margin-right: 10px;
+}
+
+.container nav ul
+{
+	float:left;
+	line-height: 100px;
+}
+
+.container nav ul li
+{
+	display: inline-block;
+	padding: 0 40px;
+	font-size: 1.75rem;
+	font-weight: 500;
+}
+
+.active
+{
+	background-color: lightgrey;
+	padding: 5px 10px;
+	border: 2px solid whitesmoke;
+	border-radius: 20px;
+	color:black;
+}
+
+.active:hover
+{
+	background-color: darkgray;
+	color: snow;
+	
+}
+
+/* Main Section */
+
+.showcase 
+{
+	width: 100%;
+	height: calc(100vh - 100px);
+	background-image: url("../imgs/Exploring\ Astronaut.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*position: absolute;*/
+	/*overflow: hidden;*/
+	border-top: 2.5px solid lightgrey;
+	border-bottom: 1px solid gray;
+}
+
+.showcase .process p
+{
+	font-size: 25px;
+	font-weight: 400;
+	margin-left: 700px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.showcase .process ul
+{
+	
+	text-align: right;
+	margin-right: 20px;
+	margin-top: 0;
+}
+
+.showcase .process ul li
+{
+	font-size: 20px;
+	font-weight: 400;
+	color: antiquewhite;
+	padding: 10px 0;
+}
+
+footer
+{
+	background-position: right;
+	height: 25px;
+	background-color: black;
+	text-align: center;
+}
+
+footer p
+{
+	font-size: 1.1rem;
+	margin-left: 15px;
+	color: lightgrey;
+	font-weight: 550;
+}
+
+
+
+
+
