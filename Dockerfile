@@ -1,3 +1,3 @@
 FROM nginx
-COPY CICD-Attempt01/src/*.* /usr/share/nginx/html
+COPY CICD-Attempt01/src/main/*.* /usr/share/nginx/html
 
