@@ -150,6 +150,20 @@ p
 	padding: 10px 0;
 }
 
+/* Popup Section */
+
+.btn
+{
+	background-color: transparent;
+	padding: 0 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin-left: 930px;
+	margin-bottom: 0;
+}
+
+
 footer
 {
 	background-position: right;
