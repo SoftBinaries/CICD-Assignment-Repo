@@ -11,7 +11,7 @@ pipeline
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/SoftBinaries/CICD-Trail-Attempt1.git']])
             }
         }    
-stage('Remove Old Docker Image & Conatiner')
+stage('Remove Old Docker Image & Container')
 {
 	steps
         {
@@ -40,6 +40,7 @@ stage('Remove Old Docker Image & Conatiner')
             {
                 script
                 {
+                    
                     withCredentials([string(credentialsId: 'hockpwd', variable: 'loghubpwd')]) 
                     {
                         sh 'docker login -u s0ftdocker -p ${loghubpwd}'
