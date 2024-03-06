@@ -41,7 +41,7 @@ stage('Remove Old Docker Image & Container')
                 script
                 {
                     
-                    withCredentials([string(credentialsId: 'hockpwd', variable: 'loghubpwd')]) 
+                    withCredentials([string(credentialsId: 'hockpwdID', variable: 'loghubpwd')]) 
                     {
                         sh 'docker login -u s0ftdocker -p ${loghubpwd}'
                         sh 'docker push s0ftdocker/cicd-assign:1.0'
